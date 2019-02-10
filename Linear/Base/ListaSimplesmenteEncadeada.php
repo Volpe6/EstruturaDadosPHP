@@ -5,6 +5,7 @@ require_once 'Nodo.php';
  * do elemento e uma referência ao próximo nodo.
  *
  * @author Drew
+ * @since  09/02/2019
  */
 class ListaSimplesmenteEncadeada {
 

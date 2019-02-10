@@ -24,8 +24,10 @@ and open the template in the editor.
         }
         
         echo '<br>tostring:'.$oListaSimplesmenteEncadeada->toString();
+        echo "<br>Tamanho   : {$oListaSimplesmenteEncadeada->size()}";
         $oListaSimplesmenteEncadeada->removeFirst();
         echo '<br>tostring:'.$oListaSimplesmenteEncadeada->toString();
+        echo "<br>Tamanho   : {$oListaSimplesmenteEncadeada->size()}";
         
         ?>
     </body>
