@@ -1,5 +1,5 @@
 <?php
-require_once 'Nodo.php';
+
 /**
  * Uma lista de tamanho dinamico onde cada nodo armazena os dados 
  * do elemento e uma referência ao próximo nodo.
@@ -133,4 +133,42 @@ class ListaSimplesmenteEncadeada {
        $sStringReturn .= ')';
        return $sStringReturn;
    }
+}
+
+/**
+ * Nodo da interno da lista simplesmente encadada
+ *
+ * @author Drew
+ * @since  10/02/2019
+ */
+class Nodo {
+    private $oElement; // elemento armazenado no nodo
+    private $oNext;    // referência ao proximo nodo
+    
+    public function __construct($oElement, $oNext) {
+        $this->oElement = $oElement;
+        $this->oNext    = $oNext;
+    }
+    
+    /**
+     * Retorna o elemento
+     * 
+     * @return $Mixed
+     */
+    public function getElement() {
+        return $this->oElement;
+    }
+    
+    /**
+     * Retorna a referência ao próximo nodo
+     * 
+     * @return Nodo
+     */
+    public function getNext() {
+        return $this->oNext;
+    }
+    
+    public function setNext($oNext) {
+        $this->oNext = $oNext;
+    }
 }
