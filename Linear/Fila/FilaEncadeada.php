@@ -24,10 +24,10 @@ class FilaEncadeada implements Fila {
     /**
      * Insere um novo elemento na fila
      * 
-     * @param mixed
+     * @param mixed - elemento a ser adicionado
      */
-    public function enqueue($oElmento) {
-        $this->getListaSimplesmenteEncadeada()->addLast($oElmento);
+    public function enqueue($oElment) {
+        $this->getListaSimplesmenteEncadeada()->addLast($oElment);
     }
     
     /**
@@ -58,15 +58,14 @@ class FilaEncadeada implements Fila {
     }
     
     public function __toString() {
-        return $this->getListaSimplesmenteEncadeada()->toString();;
+        return $this->getListaSimplesmenteEncadeada()->toString();
     }
     
     /** @return ListaSimplesmenteEncadeada */
-    public function getListaSimplesmenteEncadeada() {
+    private function getListaSimplesmenteEncadeada() {
         if(!isset($this->ListaSimplesmenteEncadeada)) {
             $this->ListaSimplesmenteEncadeada = new ListaSimplesmenteEncadeada();
         }
         return $this->ListaSimplesmenteEncadeada;
     }
-
 }

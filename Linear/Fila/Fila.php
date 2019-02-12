@@ -28,7 +28,7 @@ interface Fila {
      * 
      * @param mixed $oElmento - elemento a ser adicionado na fila
      */
-    public function enqueue($oElmento);
+    public function enqueue($oElment);
     
     /**
      * Retorna o primeiro elemento da fila

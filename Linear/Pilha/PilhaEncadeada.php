@@ -57,7 +57,7 @@ class PilhaEncadeada implements Pilha {
     }
 
     /** @return ListaSimplesmenteEncadeada */
-    public function getListaSimplesmenteEncadeada() {
+    private function getListaSimplesmenteEncadeada() {
         if(!isset($this->ListaSimplesmenteEncadeada)) {
             $this->ListaSimplesmenteEncadeada = new ListaSimplesmenteEncadeada();
         }
