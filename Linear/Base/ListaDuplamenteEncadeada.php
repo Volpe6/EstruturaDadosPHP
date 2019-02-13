@@ -177,8 +177,8 @@ class ListaDuplamenteEncadeada {
    /**
     * Adiciona um elemento na posição informada
     * 
-    * @param type $iPosition - posição na qual adicionar o elemento
-    * @param mixed $oElement - elemento a ser adicionado
+    * @param int   $iPosition - posição na qual adicionar o elemento
+    * @param mixed $oElement  - elemento a ser adicionado
     * @return mixed
     */
    public function set($iPosition, $oElement) {
